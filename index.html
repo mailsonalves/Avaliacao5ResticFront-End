@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral com Seções</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Be+Vietnam:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#alimentacao">Alimentação</a></li>
+            <li><a href="#exercicios">Exercícios</a></li>
+            <li><a href="#saude-mental">Saúde Mental</a></li>
+            <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu lateral -->
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#alimentacao">Alimentação</a></li>
+            <li><a href="#exercicios">Exercícios</a></li>
+            <li><a href="#saude-mental">Saúde Mental</a></li>
+            <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+        </ul>
+    </div>
+
+    <!-- Seções -->
+    <section class="section" id="inicio">
+        <div class="content">
+            
+            <div class="text-container">
+                <h1 class="title">Cuide da sua saúde!</h1>
+                <p class="description">
+                    Cuidar de si mesmo vai além da estética; envolve práticas que promovem bem-estar físico, mental e emocional. A rotina de cuidados pessoais é essencial para manter a saúde, reduzir o estresse e aumentar a autoconfiança.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sectionAlt" id="alimentacao">
+        <div class="content2">
+            
+            <div class="text-container">
+                <h1 class="title2">Alimentação</h1>
+                <p class="description2">
+                    A alimentação é um dos pilares da saúde. O que comemos impacta diretamente nosso bem-estar físico e mental, influenciando desde nosso peso e energia até a prevenção de doenças. Por isso, cuidar da alimentação é fundamental para uma vida mais longa e com mais qualidade.Uma alimentação saudável é aquela que fornece ao corpo todos os nutrientes necessários para o seu bom funcionamento, em quantidades adequadas. Isso inclui:<br>
+
+
+
+                    <dot>Frutas, legumes e verduras<br></dot>Grãos integrais<br>Proteínas<br>Gorduras saudáveis<br>Água 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="exercicios">
+        <div class="content">
+            
+            <div class="text-container">
+                <h1 class="title"> Pratique Exercícos Físicos</h1>
+                <p class="description">
+                    A prática regular de exercícios físicos é fundamental para uma vida saudável e ativa. Ela vai muito além de apenas manter a forma física, trazendo inúmeros benefícios para o corpo e a mente.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sectionAlt" id="saude-mental">
+        <div class="content2">
+            
+            <div class="text-container">
+                <h1 class="title2">Saúde Mental</h1>
+                <p class="description2">
+                    A saúde mental é um aspecto fundamental do nosso bem-estar geral, tão importante quanto a saúde física. Ela influencia a forma como pensamos, sentimos e nos relacionamos com o mundo ao nosso redor. Cuidar da sua saúde mental é fundamental!!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="calculadora-imc">
+    <div class="content">
+        
+        <p>Insira seu peso e altura para calcular seu Índice de Massa Corporal (IMC).</p>
+    
+        <form id="imc-form">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" placeholder="Ex: 70" required>
+            
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex: 1.75" required>
+            
+            <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+        </form>
+    
+        <p id="resultado-imc"></p>
+    </div>
+</section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.section {
+    background-color: #f5f7f9;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+.sectionAlt {
+    background-color: #155f7c;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+.content {
+    display: flex;
+    align-items: right; 
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #155f7c;
+    margin-bottom: 10px;
+}
+.title2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 400px;
+    line-height: 1.6;
+}
+.description2 {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff; 
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+
+
+nav {
+    background-color: #155f7c;
+    padding: 10px;
+}
+
+.nav-links {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content:center;  
+    font-family: 'Roboto';
+    font-weight: 500;
+    list-style: none;
+   
+}
+
+.nav-links li {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #65d369;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: auto;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Menu lateral */
+.sidebar {
+    font-family: 'Bebas Neue', cursive;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2f8fb6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #f0a500;
+}
+
+
+
+
+/* Calculadora de IMC */
+#imc-form {
+    margin-top: 20px;
+}
+
+#imc-form input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+#imc-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#imc-form button:hover {
+    background-color: #155f7c;
+}
+
+#resultado-imc {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+
+    .sidebar.active {
+        width: 250px;
+    }
+}
